@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    
+
+    <!-- My files -->
+    <script src="js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>NanaTells</title>
+  </head>
+  <body>
+    
+    <div id="main">
+      <!-- Fixed header -->
+      <div id="header">
+        <nav class="navbar navbar-light">
+          <div class="container-fluid">
+            <a  href="index.html" class="navbar-brand fw-bold pb-0" id="nana">NanaTells</a>
+            <button id="search-button" class="btn tn-outline-success fst-italic" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Search &nbsp; <i id="search-icon-1" class="bi bi-search"></i></button>
+
+            <!-- offcanvas content -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h6 class="offcanvas-title text-white fw-bold ps-3" id="offcanvasLabel">What do you want to read today?</h6>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <nav class="navbar navbar-light">
+                  <div class="container-fluid">
+                    <form class="d-flex w-100">
+                      <input id="search-bar" class="form-control me-3" type="search" placeholder="Type something..." aria-label="Search">
+                      <button class="btn" type="submit" id="search-icon-2"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <div id="recommendation" class="mx-auto">
+                    <p class="text-center mb-0">I have some recommendations for you:</p>
+
+                      <div id="rec-1" class="card mt-2 mb-3">
+                        <h5 class="card-title pt-2 ps-3">Emerald Marine Chocolate Mint Tart</h5>
+                        <img src="img/activity-cake-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <p class="card-text">Last week, while wandering on Youtube, I watched a baking tutorial by the channel Chocolate Cacao and decided I’d try it this weekend. The recipe is called ...</p>
+                        </div>
+                        <a href="#" class="card-link text-decoration-none fst-italic mb-3 pe-3" id="read-1">Keep reading</a>
+                      </div>
+
+                      <div id="rec-2" class="card mt-4 mb-3">
+                        <h5 class="card-title pt-2 ps-3">Momofuku</h5>
+                        <img src="img/book-momofuku-2.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <p class="card-text">This cookbook is a total delight for any food enthusiast and wannabe cook ...</p>
+                        </div>
+                        <a href="#" class="card-link text-decoration-none fst-italic mb-3 pe-3" id="read-2">Keep reading</a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+        </nav>
+      </div>
+
+      <div id="big-container">
+
+        <div id="nav" class="mx-auto">
+          <ul class="nav nav-justified fw-bold">
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-0 text-dark" href="home.html">Home</a>
+            </li>
+
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a id="dropdown-button" class="nav-link dropdown-toggle ps-0 pe-0 text-dark" data-bs-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-left pt-3 pb-3 ps-4 fw-bold">Books I've read</a></li><hr>
+                <li><a class="dropdown-item text-left pt-3 pb-3 ps-4 fw-bold" href="products.html">Products I've bought</a></li><hr>
+                <li><a class="dropdown-item text-left pt-3 pb-4 ps-4 fw-bold">Activities I've tried</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-0 text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-0 pe-0 text-dark" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Content -->
+        <div id="content" class="mx-auto">
+<!-- copy -->
+
+        <div id="intro" class="pt-4">
+          <p>Hello friends, welcome to my little blog. I’d like to share with you my life journey and capture beautiful moments in daily life. Hope that my blog will put a smile on your face <i class="bi bi-suit-heart-fill"></i></p>
+        </div>
+
+        <div id="carousel">
+          <div><div class="bg-dark home1"></div></div>
+          <div><div class="bg-dark home2"></div></div>
+          <div><div class="bg-dark home3"></div></div>
+        </div>
+
+        <div id="icons"><a href="modules/contact.html"></a>
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a id="connect" class="navbar-brand text-center text-white" href="modules/contact.html">Connect with me</a>
+              <div>
+                <a href="https://twitter.com/"><button class="border-0 bg-transparent"><i class="bi bi-twitter text-white"></i></button></a>
+                <a href="https://www.instagram.com/"><button class="border-0 bg-transparent"><i class="bi bi-instagram text-white"></i></button></a>
+                <a href="https://www.youtube.com/"><button class="border-0 bg-transparent"><i class="bi bi-youtube text-white"></i></button></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+<!-- copy -->
+        </div>
+
+        <!-- Fixed go-to-top button -->
+        <a id="top-bg" class="page-link position-fixed bottom-0 end-0" href="#"><i id="go-to-top" class="bi bi-arrow-up-circle-fill"></i></a>
+
+        <!-- Fixed footer -->
+        <div id="footer" class="mx-auto">
+          <p id="copyright" class="position-fixed">© 2021 NanaTells. All rights reserved.</p>
+        </div>
+
+    </div>
+
+  </body>
+</html>
